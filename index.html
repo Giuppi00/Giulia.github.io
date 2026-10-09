@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,13 +50,12 @@ p{margin:0 0 12px}ul{margin:7px 0 16px 22px;padding:0}li{margin-bottom:7px}
 <div class="cover-date">October 2026</div>
 </section>
 
-<!-- 1. THESIS -->
+<!-- 1. MASTER'S THESIS -->
 <section class="page" id="thesis">
 <h1 class="project-title">Master's Thesis – High-Performance Distributed Dynamic Mode Decomposition for Large-Scale Flow Separation Data</h1>
 <h2>Overview</h2>
 <div class="overview">
 <div class="l">Institution</div><div>University of Genoa (DIME), with a period abroad at KTH Royal Institute of Technology</div>
-<div class="l">Supervisors</div><div>Prof. D. Lengani, Dr. M. Dellacasagrande (UniGe); Dr. A. Hanifi, Dr. M. Moniripiri (KTH)</div>
 <div class="l">Completion</div><div>July 2026</div>
 </div>
 <h2>Objective</h2>
@@ -73,7 +73,10 @@ p{margin:0 0 12px}ul{margin:7px 0 16px 22px;padding:0}li{margin-bottom:7px}
 <li>On the DNS dataset, the dominant DMD eigenvalue modulus shows a growth–saturation–decay trend along the streamwise direction, qualitatively consistent with the Kelvin–Helmholtz mechanism and corroborated by an independent fluctuation-energy analysis</li>
 </ul>
 <h2>Methods and Tools</h2>
-<ul><li><strong>Programming:</strong> Python, mpi4py-style MPI, HDF5; MATLAB (reference validation)</li><li><strong>Environment:</strong> HPC cluster (Leonardo, CINECA)</li></ul>
+<ul>
+<li><strong>Programming:</strong> Python, mpi4py-style MPI, HDF5; MATLAB (reference validation)</li>
+<li><strong>Environment:</strong> HPC cluster (Leonardo, CINECA)</li>
+</ul>
 </section>
 
 <!-- 2. CRM-HL -->
@@ -81,7 +84,6 @@ p{margin:0 0 12px}ul{margin:7px 0 16px 22px;padding:0}li{margin-bottom:7px}
 <h1 class="project-title">Turbulence Course Project – Multi-Model RANS Assessment on the NASA CRM-HL 2D Airfoil</h1>
 <h2>Overview</h2>
 <div class="overview">
-<div class="l">Title</div><div>OpenFOAM Predictions against NASA TMR Reference Data</div>
 <div class="l">Institution</div><div>University of Genoa (DIME)</div>
 <div class="l">Completion</div><div>June 2026</div>
 </div>
@@ -98,15 +100,20 @@ p{margin:0 0 12px}ul{margin:7px 0 16px 22px;padding:0}li{margin-bottom:7px}
 <li>Good agreement on lower surfaces and flap; suction peaks under-predicted on slat and main wing. The small inter-model spread points to setup limits as the cause: reduced domain (3–9 chords instead of ~100), boundary-layer mesh covering ~26% of the estimated thickness, and gradient-limiter diffusion. C<sub>D</sub> was not compared because of blockage</li>
 </ul>
 <h2>Methods and Tools</h2>
-<ul><li><strong>Meshing:</strong> GMSH (OpenCASCADE)</li><li><strong>Solver:</strong> OpenFOAM 12</li><li><strong>Models:</strong> SA, SA-neg, k–ω SST</li></ul>
+<ul>
+<li><strong>Meshing:</strong> GMSH (OpenCASCADE)</li>
+<li><strong>Solver:</strong> OpenFOAM 12</li>
+<li><strong>Models:</strong> SA, SA-neg, k–ω SST</li>
+</ul>
 </section>
 
-<!-- 3. TYRE -->
+<!-- 3. WHEEL AERODYNAMICS -->
 <section class="page" id="tyre">
 <h1 class="project-title">Wheel Aerodynamics and Turbulence Model Calibration – RANS Optimization via Dakota</h1>
 <h2>Overview</h2>
 <div class="overview">
 <div class="l">Institution</div><div>University of Genoa, Department of Mechanical Engineering</div>
+<div class="l">Completion</div><div>January 2026</div>
 </div>
 <h2>Objective</h2>
 <p>Calibrate five k–ω SST closure coefficients (a₁, σ<sub>k1</sub>, σ<sub>k2</sub>, σ<sub>ω1</sub>, σ<sub>ω2</sub>) to improve the wake prediction of an isolated rotating tyre, using wind-tunnel total-pressure data.</p>
@@ -122,15 +129,18 @@ p{margin:0 0 12px}ul{margin:7px 0 16px 22px;padding:0}li{margin-bottom:7px}
 <li>Simulated vortex cores remain more diffused and less intense than measured: closure-coefficient tuning alone does not resolve this separated, out-of-equilibrium wake</li>
 </ul>
 <h2>Methods and Tools</h2>
-<ul><li><strong>Optimization:</strong> Dakota (NL2SOL)</li><li><strong>CFD:</strong> OpenFOAM, k–ω SST</li><li><strong>Post-processing:</strong> ParaView, Python</li></ul>
+<ul>
+<li><strong>Optimization:</strong> Dakota (NL2SOL)</li>
+<li><strong>CFD:</strong> OpenFOAM, k–ω SST</li>
+<li><strong>Post-processing:</strong> ParaView, Python</li>
+</ul>
 </section>
 
-<!-- BACHELOR THESIS -->
+<!-- 4. BACHELOR'S THESIS -->
 <section class="page" id="bachelor">
 <h1 class="project-title">Bachelor's Thesis – CFD Analysis of Tip Clearance Effects in an Axial Turbine Stage</h1>
 <h2>Overview</h2>
 <div class="overview">
-<div class="l">Title</div><div>CFD Analysis of Tip Clearance Variation Effects in an Axial Turbine Model</div>
 <div class="l">Institution</div><div>University of Genoa</div>
 <div class="l">Completion</div><div>July 2023</div>
 </div>
@@ -149,16 +159,19 @@ p{margin:0 0 12px}ul{margin:7px 0 16px 22px;padding:0}li{margin-bottom:7px}
 <li>Total pressure losses increase clearly with tip clearance; the affected region expands from the blade tip towards the hub</li>
 </ul>
 <h2>Methods and Tools</h2>
-<ul><li><strong>Mesh generation, CFD solver and post-processing:</strong> NUMECA AutoGrid5™, FINE™/Turbo, CFView™</li><li><strong>Turbulence model:</strong> Spalart–Allmaras (1-equation model)</li></ul>
+<ul>
+<li><strong>Mesh generation, CFD solver and post-processing:</strong> NUMECA AutoGrid5™, FINE™/Turbo, CFView™</li>
+<li><strong>Turbulence model:</strong> Spalart–Allmaras (1-equation model)</li>
+</ul>
 </section>
 
-<!-- DELTA -->
+<!-- 5. DELTA WING -->
 <section class="page" id="delta">
 <h1 class="project-title">Numerical Techniques Course – CFD Analysis of the Flow around a Delta Wing</h1>
 <h2>Overview</h2>
 <div class="overview">
 <div class="l">Institution</div><div>University of Genoa (DIME)</div>
-<div class="l">Course</div><div>Numerical Techniques, a.y. 2024/2025</div>
+<div class="l">Completion</div><div>February 2025</div>
 </div>
 <h2>Objective and Implementation</h2>
 <ul>
@@ -167,16 +180,18 @@ p{margin:0 0 12px}ul{margin:7px 0 16px 22px;padding:0}li{margin-bottom:7px}
 <li>Pressure-based, steady RANS with k–ω SST; no-slip walls, symmetry and static-pressure outlet</li>
 </ul>
 <h2>Results</h2>
-<ul><li>Analysis of pressure and velocity distributions, turbulent kinetic energy, wall shear stress and surface pressure, and streamline/vortex structures</li></ul>
+<ul>
+<li>Analysis of pressure and velocity distributions, turbulent kinetic energy, wall shear stress and surface pressure, and streamline/vortex structures</li>
+</ul>
 </section>
 
-<!-- 5. STATOR -->
+<!-- 6. STATOR CASCADE -->
 <section class="page" id="stator">
 <h1 class="project-title">Numerical Techniques Course – CFD of a Cooled and Uncooled Gas Turbine Stator Cascade</h1>
 <h2>Overview</h2>
 <div class="overview">
 <div class="l">Institution</div><div>University of Genoa (DIME)</div>
-<div class="l">Course</div><div>Numerical Techniques, a.y. 2024/2025</div>
+<div class="l">Completion</div><div>February 2025</div>
 </div>
 <h2>Objective and Implementation</h2>
 <ul>
@@ -185,16 +200,18 @@ p{margin:0 0 12px}ul{margin:7px 0 16px 22px;padding:0}li{margin-bottom:7px}
 <li>Energy equation on, k–ω SST, ideal-gas air, residual targets down to 1e-9 (1e-12 on energy)</li>
 </ul>
 <h2>Results</h2>
-<ul><li>Fully subsonic flow, no shocks; expansion ratio about 1.56 in both cases; blade loading, temperature and boundary-layer details, heat fluxes on pressure side, suction side and trailing edge, and a comparison of pressure losses between cooled and uncooled cascades</li></ul>
+<ul>
+<li>Fully subsonic flow, no shocks; expansion ratio about 1.56 in both cases; blade loading, temperature and boundary-layer details, heat fluxes on pressure side, suction side and trailing edge, and a comparison of pressure losses between cooled and uncooled cascades</li>
+</ul>
 </section>
 
-<!-- 6. COMPRESSOR -->
+<!-- 7. RADIAL COMPRESSOR -->
 <section class="page" id="compressor">
 <h1 class="project-title">Numerical Techniques Course – Performance Characterization of a Radial Compressor Rotor</h1>
 <h2>Overview</h2>
 <div class="overview">
 <div class="l">Institution</div><div>University of Genoa (DIME)</div>
-<div class="l">Course</div><div>Numerical Techniques, a.y. 2024/2025</div>
+<div class="l">Completion</div><div>February 2025</div>
 </div>
 <h2>Objective and Implementation</h2>
 <ul>
@@ -202,10 +219,12 @@ p{margin:0 0 12px}ul{margin:7px 0 16px 22px;padding:0}li{margin-bottom:7px}
 <li>Procedure: reference-condition run, then variation of outlet pressure (1, 1.5, 1.75 bar) to build the machine characteristic, with monitoring of residuals, y⁺ and mass flow</li>
 </ul>
 <h2>Results</h2>
-<ul><li>Flow analysis at spans of 20, 50 and 80%: relative Mach number, velocity vectors, entropy, meridional pressure, trailing-edge Mach and density gradients</li></ul>
+<ul>
+<li>Flow analysis at spans of 20, 50 and 80%: relative Mach number, velocity vectors, entropy, meridional pressure, trailing-edge Mach and density gradients</li>
+</ul>
 </section>
 
-<!-- 7. WING -->
+<!-- 8. TAPERED WING -->
 <section class="page" id="wing">
 <h1 class="project-title">Aerodynamics Course – Tapered Glider Wing with S4083(A) Airfoil</h1>
 <h2>Overview</h2>
@@ -219,10 +238,12 @@ p{margin:0 0 12px}ul{margin:7px 0 16px 22px;padding:0}li{margin-bottom:7px}
 <li>Lifting-line theory implemented in <strong>MATLAB</strong> (Fourier series, grid-dependency study: 8 panels per semi-span sufficient), compared with XFLR5 LLT, VLM2 and 3D panel methods</li>
 </ul>
 <h2>Results</h2>
-<ul><li>Methods agree closely on C<sub>L</sub>, drag components and polars; cruise angle of attack of about 0.9–1.0° from level-flight condition; analysis of efficiency, quarter-chord moment and spanwise lift</li></ul>
+<ul>
+<li>Methods agree closely on C<sub>L</sub>, drag components and polars; cruise angle of attack of about 0.9–1.0° from level-flight condition; analysis of efficiency, quarter-chord moment and spanwise lift</li>
+</ul>
 </section>
 
-<!-- 8. XFOIL -->
+<!-- 9. XFOIL -->
 <section class="page" id="xfoil">
 <h1 class="project-title">Aerodynamics Course – S4083(A) Airfoil: XFoil versus Experimental Data</h1>
 <h2>Overview</h2>
@@ -236,9 +257,12 @@ p{margin:0 0 12px}ul{margin:7px 0 16px 22px;padding:0}li{margin-bottom:7px}
 <li>Sensitivity of the laminar–turbulent transition to N<sub>crit</sub> (4, 9, 12)</li>
 </ul>
 <h2>Results</h2>
-<ul><li>XFoil over-predicts lift and efficiency and under-predicts drag, mainly at low Re and near stall, where separation and transition are poorly modelled; N<sub>crit</sub> = 4 gave the closest match to the measurements</li></ul>
+<ul>
+<li>XFoil over-predicts lift and efficiency and under-predicts drag, mainly at low Re and near stall, where separation and transition are poorly modelled; N<sub>crit</sub> = 4 gave the closest match to the measurements</li>
+</ul>
 <div class="back-top"><a href="#top">↑ Back to top</a></div>
 </section>
 
 </body>
 </html>
+```
